@@ -1,0 +1,39 @@
+﻿<Window x:Class="ProductService.Forms.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductService.Forms"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="754.957" Width="1047.003" MinWidth="378" MinHeight="539">
+    <Window.Background>
+        <ImageBrush ImageSource="/source/walls.jpg" Stretch="UniformToFill" Opacity="0.685"/>
+    </Window.Background>
+    <Grid>
+
+        <Grid Background="White" HorizontalAlignment="Center" Width="378" Height="539" VerticalAlignment="Center">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="134*"/>
+                <RowDefinition Height="51*"/>
+                <RowDefinition Height="88*"/>
+                <RowDefinition Height="173*"/>
+                <RowDefinition Height="93*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="57*"/>
+                <ColumnDefinition Width="370*"/>
+                <ColumnDefinition Width="61*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="72" Margin="0,61,0,0" VerticalAlignment="Top" Width="72" Grid.Column="1" Source="/source/beauty_logo.ico" />
+
+            <TextBlock x:Name="tb_welcome" Text="Меню" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Height="27" Width="287" Margin="43,0,0,0" Grid.ColumnSpan="2"/>
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="1">
+                <Button x:Name="btn_retail" Content="Список производителей" Height="25" Margin="0 5"/>
+                <Button x:Name="btn_products" Content="Каталог продуктов" Height="25" Margin="0 0" Click="btn_products_Click"/>
+                <Button x:Name="btn_sales" Content="Скидки" Height="25" Margin="0 5"/>
+                <Button x:Name="btn_users" Content="Управления учетными данными" Height="25" Margin="0 0" Visibility="Collapsed"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
