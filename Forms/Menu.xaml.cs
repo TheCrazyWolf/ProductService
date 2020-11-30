@@ -40,6 +40,13 @@ namespace ProductService.Forms
             catalog.Show();
             Close();
         }
+
+        private void Btn_retail_Click(object sender, RoutedEventArgs e)
+        {
+            Forms.RetailList retailList = new RetailList();
+            retailList.Show();
+            Close();
+        }
     }
 
     

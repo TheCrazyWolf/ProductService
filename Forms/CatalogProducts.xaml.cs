@@ -22,9 +22,15 @@ namespace ProductService.Forms
         public CatalogProducts()
         {
             InitializeComponent();
-            DB.ProductServiceEntities ef = new DB.ProductServiceEntities();
-            lb_products.ItemsSource = ef.Products.ToList();
-
+            try
+            {
+                Controllers.Controller controller = new Controllers.Controller();
+                lb_products.ItemsSource = controller.Viewers;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

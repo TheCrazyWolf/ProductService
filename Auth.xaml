@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProductService"
         mc:Ignorable="d"
-        Title="Авторизация" Height="754.957" Width="1047.003" MinWidth="378" MinHeight="539">
+        Title="Авторизация" Height="754.957" Width="1047.003" MinWidth="378" MinHeight="539" Icon="/source/beauty_logo.ico">
     <Window.Background>
         <ImageBrush ImageSource="/source/walls.jpg" Stretch="UniformToFill" Opacity="0.685"/>
     </Window.Background>
@@ -30,7 +30,7 @@
                 <ColumnDefinition Width="370*"/>
                 <ColumnDefinition Width="61*"/>
             </Grid.ColumnDefinitions>
-            <Image HorizontalAlignment="Left" Height="72" Margin="0,61,0,0" VerticalAlignment="Top" Width="72" Grid.Column="1" Source="source/beauty_logo.ico" />
+            <Image HorizontalAlignment="Left" Height="72" Margin="0,61,0,0" VerticalAlignment="Top" Width="72" Grid.Column="1" Source="/source/beauty_logo.ico" />
 
             <TextBlock Text="Авторизация" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" Height="27" Width="120"/>
             <TextBlock Text="Логин" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Height="16" Width="34" Margin="0,0,0,5"/>

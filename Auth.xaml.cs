@@ -97,7 +97,7 @@ namespace ProductService
         {
             DB.ProductServiceEntities ef = new DB.ProductServiceEntities();
 
-            var user = ef.users.Where(x => x.login == tb_login.Text && x.password == tb_password.Password).FirstOrDefault();
+            var user = ef.users.Where(x => x.login == tb_login.Text && x.password == tb_password.Password).SingleOrDefault();
             if (user != null)
             {
                 if (tb_login.Text == "admin")

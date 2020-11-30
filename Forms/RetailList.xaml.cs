@@ -15,13 +15,17 @@ using System.Windows.Shapes;
 namespace ProductService.Forms
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для RetailList.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class RetailList : Window
     {
-        public Window1()
+        public RetailList()
         {
             InitializeComponent();
+            DB.ProductServiceEntities ef = new DB.ProductServiceEntities();
+            datagrid.ItemsSource = ef.Manufacters.ToList();
         }
+
+       
     }
 }

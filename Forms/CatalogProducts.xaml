@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CatalogProducts" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lb_products" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="39,116,81,32" >
+        <ListBox x:Name="lb_products" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="39,116,32,32" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border BorderBrush="Black" BorderThickness="2">
