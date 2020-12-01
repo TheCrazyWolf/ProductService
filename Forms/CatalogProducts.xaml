@@ -27,9 +27,9 @@
                         
                         <TextBlock Text="{Binding Title}" FontSize="15" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" TextAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <TextBlock Text="{Binding Price}" TextWrapping="Wrap" TextAlignment="Center"/>
-                            <TextBlock Text=" руб." TextWrapping="Wrap" TextAlignment="Center"/>
-                        </StackPanel>
+                                <TextBlock Text="{Binding Price}" TextWrapping="Wrap" TextAlignment="Center"/>
+                                <Button x:Name="btn_edit" Content="Изменить"/>
+                            </StackPanel>
                     </Grid>
                     </Border>
                 </DataTemplate>

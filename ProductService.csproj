@@ -114,6 +114,10 @@
       <DependentUpon>Auth.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Forms\AddOrChanger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\CatalogProducts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,6 +132,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddOrChanger.xaml.cs">
+      <DependentUpon>AddOrChanger.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CatalogProducts.xaml.cs">
       <DependentUpon>CatalogProducts.xaml</DependentUpon>
     </Compile>

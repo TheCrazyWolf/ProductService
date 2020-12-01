@@ -15,7 +15,7 @@ namespace ProductService.Controllers
     {
 
         /// Поля из БДшки
-        public string IdProduct { get; set; }
+        public int IdProduct { get; set; }
         public string IdManufacter { get; set; }
         public string Title { get; set; }
         public string Status { get; set; }
@@ -32,6 +32,7 @@ namespace ProductService.Controllers
             Status = GetStatus(products);
             Price = GetPrice(products);
             MainFilePath = GetMainFilePath(products);
+            IdProduct = products.IdProduct;
         }
 
         private string GetMainFilePath(Products products)
