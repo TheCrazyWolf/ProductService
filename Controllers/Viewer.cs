@@ -26,7 +26,7 @@ namespace ProductService.Controllers
         /// Конструктор вьевера
         /// </summary>
         /// <param name="products"></param>
-        public Viewer(DB.Products products)
+        public Viewer(Products products)
         {
             Title = GetTitle(products); ;
             Status = GetStatus(products);

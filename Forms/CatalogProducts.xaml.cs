@@ -32,5 +32,22 @@ namespace ProductService.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Btn_edit_Click(object sender, RoutedEventArgs e)
+        {
+            var bt = e.OriginalSource as Button;
+
+            var product = bt.DataContext as Controllers.Viewer;
+
+            MessageBox.Show(e.OriginalSource.ToString());
+
+            Forms.AddOrChanger addOrChanger = new AddOrChanger(product);
+
+            if (addOrChanger.ShowDialog() == true)
+            {
+                Controllers.Controller controller = new Controllers.Controller();
+                lb_products.ItemsSource = controller.Viewers;
+            }
+        }
     }
 }

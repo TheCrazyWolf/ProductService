@@ -19,11 +19,36 @@ namespace ProductService.Forms
     /// </summary>
     public partial class AddOrChanger : Window
     {
-        private DB.ProductServiceEntities ef = new DB.ProductServiceEntities();
+        private DB.Products products = new DB.Products();
+
+
+
         public AddOrChanger()
         {
             InitializeComponent();
-            stack.DataContext = ef.Products.ToList();
+            stack.DataContext = products;
+
+            cb_box.ItemsSource = new DB.ProductServiceEntities().Manufacters.ToList();
+            cb_retail.ItemsSource = new string[] { "активен", "неактивен" };
         }
+
+        public AddOrChanger(Controllers.Viewer viewer)
+        {
+            InitializeComponent();
+            cb_box.ItemsSource = new DB.ProductServiceEntities().Manufacters.ToList();
+            cb_retail.ItemsSource = new string[] { "активен", "неактивен" };
+            Controllers.Controller controller = new Controllers.Controller(viewer);
+            stack.DataContext = controller.Product;
+
+
+
+            cb_retail.SelectedItem = (cb_retail.ItemsSource as string[]).Single(x => x == controller.Product.Status);
+
+            cb_box.SelectedItem = (cb_box.ItemsSource as List<DB.Manufacters>).Single(x => x.IdManufacter == controller.Product.IdManufacter);
+
+
+          
+        }
+        
     }
 }

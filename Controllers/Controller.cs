@@ -14,6 +14,8 @@ namespace ProductService.Controllers
     public class Controller
     {
         private DB.ProductServiceEntities ef; // Объявляем ентити
+       
+        
         /// <summary>
         /// Поле для листа из вьевера
         /// </summary>
@@ -47,6 +49,7 @@ namespace ProductService.Controllers
             Product = products;
         }
 
+
         public void AddProduct()
         {
             ef.Products.AddOrUpdate(Product);
@@ -54,7 +57,7 @@ namespace ProductService.Controllers
         }
 
         public void Delete()
-        {
+        {         
             ef.Products.Remove(Product);
             ef.SaveChanges();
         }

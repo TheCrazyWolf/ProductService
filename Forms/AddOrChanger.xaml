@@ -23,9 +23,9 @@
             <TextBlock Text="Цена"/>
             <TextBox x:Name="tb_price" Height="30" Text="{Binding Price}"></TextBox>
             <TextBlock Text="Производитель"/>
-            <ComboBox x:Name="cb_retail" Text="{Binding Manufacters.IdManufacter}"/>
+            <ComboBox x:Name="cb_retail" />
             <TextBlock Text="Статус"/>
-            <ComboBox x:Name="cb_box" Text="{Binding Status}"/>
+            <ComboBox x:Name="cb_box" />
         </StackPanel>
     </Grid>
 </Window>
