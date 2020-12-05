@@ -13,7 +13,7 @@ namespace ProductService.Controllers
     /// </summary>
     public class Viewer
     {
-
+        public readonly string test = "";
         /// Поля из БДшки
         public int IdProduct { get; set; }
         public string IdManufacter { get; set; }

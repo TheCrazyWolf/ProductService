@@ -18,7 +18,7 @@ namespace ProductService.DB
     public partial class ProductServiceEntities : DbContext
     {
         public ProductServiceEntities()
-            : base("name=" + App.TypeConnect)
+            : base("name=ProductServiceEntities")
         {
         }
     

@@ -8,8 +8,8 @@
         <EntityTypeShape EntityType="ProductServiceModel.Manufacters" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ProductServiceModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="ProductServiceModel.Sales" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProductServiceModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProductServiceModel.users" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductServiceModel.sysdiagrams" Width="1.5" PointX="2.125" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductServiceModel.users" Width="1.5" PointX="5.5" PointY="4.875" IsExpanded="true" />
         <AssociationConnector Association="ProductServiceModel.FK_Products_Manufacters" ManuallyRouted="false" />
         <AssociationConnector Association="ProductServiceModel.FK_Sales_Products" ManuallyRouted="false" />
       </Diagram>

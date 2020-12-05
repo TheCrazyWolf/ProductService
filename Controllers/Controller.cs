@@ -14,8 +14,7 @@ namespace ProductService.Controllers
     public class Controller
     {
         private DB.ProductServiceEntities ef; // Объявляем ентити
-       
-        
+         
         /// <summary>
         /// Поле для листа из вьевера
         /// </summary>

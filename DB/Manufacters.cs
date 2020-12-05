@@ -26,17 +26,5 @@ namespace ProductService.DB
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Products> Products { get; set; }
-
-
-        /* public override string ToString()
-         {
-             return Title + "(" + DateStart.ToString() + ")"; 
-         } */
-
-        public override string ToString()
-        {
-            return string.Format("Производитель {0} Дата регистрации {1} ", Title, DateStart.GetDateTimeFormats()[0]);
-            //return          " (Производитель - " + Title + ". Дата начала продажи: " + DateStart.ToString();
-        }
     }
 }

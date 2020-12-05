@@ -19,6 +19,8 @@ namespace ProductService.Forms
     /// </summary>
     public partial class CatalogProducts : Window
     {
+
+        protected Controllers.Viewer viewer;
         public CatalogProducts()
         {
             InitializeComponent();
@@ -35,6 +37,10 @@ namespace ProductService.Forms
 
         private void Btn_edit_Click(object sender, RoutedEventArgs e)
         {
+
+            var tp = e.OriginalSource as Button;
+
+            
             var bt = e.OriginalSource as Button;
 
             var product = bt.DataContext as Controllers.Viewer;
@@ -47,6 +53,21 @@ namespace ProductService.Forms
             {
                 Controllers.Controller controller = new Controllers.Controller();
                 lb_products.ItemsSource = controller.Viewers;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+
+               
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }
